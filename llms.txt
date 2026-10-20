@@ -1,0 +1,66 @@
+# Rempo GTM
+
+> The go-to-market brain for Rempo, a done-for-you Google review service for owner-led home-service shops (HVAC and plumbing first), sold online through one self-serve VSL funnel with two sales bumpers, the service in front and product add-ons behind. Built 2026-10-19 from the gtm-builder Run 2. Pre-launch: the proof set is empty and the Run 2 offer is PLANNED. This file indexes the repository for AI agents. Start with the master context, then the rules, then task-specific references.
+
+## Source of truth
+- [Master GTM context](context/Rempo_GTM_Master_Context.md): strategy, ICP, positioning, offer, funnel, campaigns, cheatsheet.
+
+## Control layer (read before writing)
+- [Writing rules](rules/writing-rules.md): mechanics, tone, writing for the ear, channel and audience discipline, signature lines.
+- [Do not say](rules/do-not-say.md): forbidden claims and safe replacements, delivery-copy bans, scoped superlatives, competitor facts.
+- [Status ledger](rules/feature-status.md): LIVE, PARTIAL, PLANNED, HELD, DROPPED for services, features, offer terms, funnel assets.
+- [Glossary](rules/glossary.md): canonical vocabulary and banned near-synonyms.
+
+## Reference (load on demand)
+- [VSL funnel engine](reference/vsl-funnel-engine.md): the channel engine; how Meta, Search, and nurture feed one VSL page; hooks; VSL beats; method.
+- [Service Offer Matrix](reference/service-offer-matrix.md): what each service produces, the 14 vectors, verdicts, KPI tree, baseline.
+- [Feature matrix](reference/feature-matrix.md): quadrants, what leads, table stakes, the demand driver.
+- [Competitive analysis](reference/competitive-analysis.md): the slate, positioning vectors, the wedge.
+- [Competitor battlecards](reference/competitor-battlecards.md): per rival, strength, gap, how we win, lines to say.
+- [Positioning](reference/positioning.md): angles and verdicts, core claim, statements, VSL page requirements.
+- [Positioning verdict](reference/positioning-verdict.md): the settled forks and the reasoning.
+- [Offer architecture](reference/offer-architecture.md): the ladder, the release rule, one-company guardrails.
+- [Pricing and packaging](reference/pricing-and-packaging.md): live page vs planned ladder, value metric, ROI anchors, funnel economics.
+- [ICP and personas](reference/icp-personas.md): one ICP, two maturity levels, owner and office manager, checkout qualifier, founding cohort.
+- [Value proposition, owner](reference/value-proposition-owner.md): promise, pillars, reasons to believe, copy drills.
+- [Customer journey](reference/customer-journey.md): the one funnel, stages, bumpers, activation blockers.
+- [Objection handling](reference/objection-handling.md): the recurring pushbacks and the honest answers.
+- [Marketing campaigns](reference/marketing-campaigns.md): channels, the hire, the funnel core, three campaigns.
+- [Lead magnet scorecard](reference/lead-magnet-scorecard.md): the Review Engine Scorecard, tiers, Gap Report, email sequence.
+- [90-day experiment](reference/experiment-90-day.md): budget, tests, gates, success and stop rules.
+- [Review compliance](reference/review-compliance.md): Google policy, the FTC rules, texting registration and consent.
+- [Market evidence](reference/market-evidence.md): third-party facts usable in copy, with source and quality.
+- [Product requirements](reference/product-requirements.md): the 26 things GTM needs product to make true (25 from Run 2, 1 from the live test).
+
+## Templates
+- [Template index](templates/README.md): VSL script, VSL page, FAQ, Meta ad, search ad, comparison page, nurture email, sales call guide, onboarding email, review request, review reply, monthly report.
+
+## Examples (match the voice; drafts pending founder approval)
+- [Example index](examples/README.md): VSL opening, VSL page hero, Meta ads, search ads, nurture email 3, review request and replies, FAQ answers.
+
+## Prompts
+- [Common tasks](prompts/common-tasks.md): ready-to-run prompts for every recurring job.
+
+## Operations and state
+- [Copy bank](ops/copy-bank.md): approved language, safe to reuse verbatim.
+- [Decision log](ops/decisions.md): what was decided, when, and why; open questions and owners.
+- [Signal log](ops/signal-log.md): raw market input and its disposition.
+- [Asset index](ops/asset-index.md): source manifest, live surfaces, adapters.
+- [QA checklist](ops/QA-checklist.md): the pre-ship gate.
+- [Review cadence](ops/review-cadence.md): rituals, owners, staleness, the amendment procedure.
+
+## Portability (doors for other tools)
+- [AGENTS.md block](adapters/AGENTS.block.md): pointer for Codex in any repo that writes customer-facing text.
+- [Portable control layer](adapters/portable-control-layer.md): dated paste-in version for chat models with no file access. Regenerate whenever a ledger changes.
+
+## Snapshots
+- [Pre-launch baseline](snapshots/2026-10-19-pre-launch-baseline.md): the starting board before any spend.
+
+## Sources
+- `sources/raw/`: the founder's materials, the Google-folder workbooks and documents, the brief, and the research.
+- `sources/extracted/`: Markdown extracts and the filled source manifest (`sources/extracted/INDEX.md`).
+
+## Tooling
+- `scripts/audit.py`: runs the GTM Brain audit on this repo.
+- `.claude/skills/go-to-market-brain/`: the GTM Brain skill (BUILD, UPDATE, OPERATE).
+- `.claude/skills/gtm-slop-filter/`: copy rules without a brain.
